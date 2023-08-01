@@ -1,6 +1,7 @@
 package com.ginimbi;
 
 import java.awt.*;
+import java.util.Locale;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,6 +17,13 @@ public class Main {
             default:
                 System.out.println("Zadhakwa");
         }
+
+      String result =  switch (grade){
+            case 'A' -> "Excellent";
+          default ->"Fail";
+        };
+
+        System.out.println(result.toLowerCase(Locale.ROOT));
     }
 
 }

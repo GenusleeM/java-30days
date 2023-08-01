@@ -4,12 +4,21 @@ import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Ginimbi");
-        Point pointA = new Point(15,10);
-//        System.out.println(pointA);
-        Point pointB = pointA;
-        pointA.x=100;
-        System.out.println(pointA);
-        System.out.println(pointB);
+//    Loops
+        String[] names = {
+                "Genius",
+                "Genus",
+                "Gin"
+        };
+//        for (int i =0; i< names.length; i++){
+//            System.out.println(names[i]);
+//        };
+
+//        Enhanced for loop
+        for (String name : names){
+            System.out.println(name);
+        }
     }
+
+
 }

@@ -1,8 +1,10 @@
 package com.ginimbi;
 
+import java.io.InputStream;
 import java.math.BigDecimal;
 import java.time.*;
 import java.util.Locale;
+import java.util.Scanner;
 
 public class Fool {
     public static void main(String[] args) {
@@ -75,10 +77,26 @@ public class Fool {
 // BigDecimal result1 = num2.subtract(num1);
 //        System.out.println(result1);
 
-        BigDecimal number = BigDecimal.TEN;
-        System.out.println(number);
-        System.out.println(number.max(BigDecimal.ZERO));
-        System.out.println(number.compareTo(BigDecimal.ONE));
+//
+//        BigDecimal number = BigDecimal.TEN;
+//        System.out.println(number);
+//        System.out.println(number.max(BigDecimal.ZERO));
+//        System.out.println(number.compareTo(BigDecimal.ONE));
+
+
+//        Scanner
+        System.out.println("Whats your name");
+        Scanner scanner = new Scanner(System.in);
+      String input =  scanner.nextLine();
+
+        System.out.println("Hello "+ input);
+        System.out.println("whats your age");
+      int age =  scanner.nextInt();
+        if (age < 15) {
+            System.out.println("You are jus a kid");
+        }else {
+            System.out.println("Makura baba");
+        }
     };
  private static  int add(int a, int b){
      int result = a + b;

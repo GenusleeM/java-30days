@@ -1,5 +1,6 @@
 package com.ginimbi;
 
+import java.math.BigDecimal;
 import java.time.*;
 import java.util.Locale;
 
@@ -63,8 +64,16 @@ public class Fool {
 //        System.out.println(someDate);
 
 //        Working with dates
-        System.out.println(ZonedDateTime.now());
-        System.out.println(Instant.now());
+//        System.out.println(ZonedDateTime.now());
+//        System.out.println(Instant.now());
+
+//        doubles
+//        When dealing with money use bigdecimal
+        BigDecimal num1 = new BigDecimal("0.03") ;
+        BigDecimal num2 = new BigDecimal("0.04") ;
+//        double num2 = 0.04;
+ BigDecimal result1 = num2.subtract(num1);
+        System.out.println(result1);
     };
  private static  int add(int a, int b){
      int result = a + b;

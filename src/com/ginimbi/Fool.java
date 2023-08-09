@@ -1,8 +1,6 @@
 package com.ginimbi;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
+import java.time.*;
 import java.util.Locale;
 
 public class Fool {
@@ -38,20 +36,35 @@ public class Fool {
 
 //        LocalDate
       LocalDateTime now =  LocalDateTime.now();
-        System.out.println(now);
-        System.out.println(now.getMonth());
-        System.out.println(now.getDayOfWeek());
-        System.out.println(now.getDayOfYear());
-        System.out.println(now.getDayOfMonth());
-        System.out.println(now.getSecond());
-        System.out.println(now.minusDays(5));
+//        System.out.println(now);
+//        System.out.println(now.getMonth());
+//        System.out.println(now.getDayOfWeek());
+//        System.out.println(now.getDayOfYear());
+//        System.out.println(now.getDayOfMonth());
+//        System.out.println(now.getSecond());
+//        System.out.println(now.minusDays(5));
 
 //        Localdate
         LocalDate date = LocalDate.now();
 
         LocalTime localTime = LocalTime.now();
-        System.out.println(localTime);
-        System.out.println(localTime.isBefore(LocalTime.MIDNIGHT));
+//        System.out.println(localTime);
+//        System.out.println(localTime.isBefore(LocalTime.MIDNIGHT));
+
+//        Creating Specifc dates
+    LocalDateTime someDate =    LocalDateTime.of(
+                1999,
+                Month.OCTOBER,
+                19,
+                00,
+                00
+
+        );
+//        System.out.println(someDate);
+
+//        Working with dates
+        System.out.println(ZonedDateTime.now());
+        System.out.println(Instant.now());
     };
  private static  int add(int a, int b){
      int result = a + b;

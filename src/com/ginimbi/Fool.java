@@ -85,18 +85,37 @@ public class Fool {
 
 
 //        Scanner
-        System.out.println("Whats your name");
-        Scanner scanner = new Scanner(System.in);
-      String input =  scanner.nextLine();
+//        System.out.println("Whats your name");
+//        Scanner scanner = new Scanner(System.in);
+//      String input =  scanner.nextLine();
+//
+//        System.out.println("Hello "+ input);
+//        System.out.println("whats your age");
+//      int age =  scanner.nextInt();
+//        if (age < 15) {
+//            System.out.println("You are jus a kid");
+//        }else {
+//            System.out.println("Makura baba");
+//        }
 
-        System.out.println("Hello "+ input);
-        System.out.println("whats your age");
-      int age =  scanner.nextInt();
-        if (age < 15) {
-            System.out.println("You are jus a kid");
-        }else {
-            System.out.println("Makura baba");
-        }
+//        Exception
+        try {
+            int number = Integer.parseInt("1");
+            System.out.println(number);
+
+            for (int i=10; i>=0; i--){
+                System.out.println(10/i);
+            }
+
+        }catch (NumberFormatException e){
+            System.out.println(e);
+        }catch (ArithmeticException e){
+            System.out.println(e);
+        };
+
+
+
+
     };
  private static  int add(int a, int b){
      int result = a + b;

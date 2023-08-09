@@ -68,12 +68,17 @@ public class Fool {
 //        System.out.println(Instant.now());
 
 //        doubles
-//        When dealing with money use bigdecimal
-        BigDecimal num1 = new BigDecimal("0.03") ;
-        BigDecimal num2 = new BigDecimal("0.04") ;
-//        double num2 = 0.04;
- BigDecimal result1 = num2.subtract(num1);
-        System.out.println(result1);
+////        When dealing with money use bigdecimal
+//        BigDecimal num1 = new BigDecimal("0.03") ;
+//        BigDecimal num2 = new BigDecimal("0.04") ;
+////        double num2 = 0.04;
+// BigDecimal result1 = num2.subtract(num1);
+//        System.out.println(result1);
+
+        BigDecimal number = BigDecimal.TEN;
+        System.out.println(number);
+        System.out.println(number.max(BigDecimal.ZERO));
+        System.out.println(number.compareTo(BigDecimal.ONE));
     };
  private static  int add(int a, int b){
      int result = a + b;

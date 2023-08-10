@@ -1,23 +1,27 @@
 package com.ginimbi;
 
-import java.awt.*;
-import java.util.Locale;
+import java.math.BigDecimal;
 
 public class Main {
-    public  static  String foo = "bar";
-    public static void main(String[] args) {
-        try {
-            System.out.println(devide(10,0));
-        } catch (MyCheckedException e) {
-            throw new RuntimeException(e);
-        }
 
+    public static void main(String[] args) {
+         Address gieAddress = new Address("12",45,"Harare");
+         Car car = new Car("Honda",new BigDecimal("200"));
+         Car[] cars = {car};
+        Person person = new Person(
+                "Genuslee",
+                "Mapedze",
+                23,
+                gieAddress,
+                Gender.MALE,
+                "gmapedze@gmail.com",
+                "+263783783782",
+                cars
+
+                );
+
+        System.out.println(person);
     }
-    public  static int devide(int a, int b) throws MyCheckedException{
-        if (b==0){
-            throw  new MyCheckedException("Cant divide by zero");
-        }
-        return a/b ;
-    }
+
 
 }
